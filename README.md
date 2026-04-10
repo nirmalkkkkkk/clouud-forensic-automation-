@@ -1,2 +1,22 @@
-# clouud-forensic-automation-
-A Cloud Forensics Automation system for healthcare breaches that helps identify potential security incidents by collecting and analyzing file metadata. It automates evidence collection by scanning files, logging timestamps, and generating structured reports, enabling efficient and reliable digital forensic analysis.
+# Cloud Forensics Automation for Healthcare Breaches
+
+## 📌 Description
+A Cloud Forensics Automation tool that collects and analyzes file metadata to detect suspicious activities in healthcare systems. It scans directories, logs file timestamps, and generates reports for forensic investigation.
+
+## 🚀 Features
+- File metadata collection
+- Evidence report generation (CSV/Excel)
+- Suspicious activity detection
+- Logging system
+- Simple Web UI (Flask)
+
+## 🧠 Tech Stack
+- Python
+- Flask
+- File Handling & Metadata
+- CSV / Excel Reporting
+
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+python main.py
