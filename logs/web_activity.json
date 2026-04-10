@@ -1,0 +1,16 @@
+[
+  {
+    "type": "scan",
+    "timestamp": "2026-04-10 15:03:32",
+    "directory": "healthcare_data",
+    "files": 10,
+    "high_risk": 4
+  },
+  {
+    "type": "scan",
+    "timestamp": "2026-04-10 15:03:55",
+    "directory": "healthcare_data",
+    "files": 10,
+    "high_risk": 4
+  }
+]

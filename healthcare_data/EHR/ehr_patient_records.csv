@@ -1,0 +1,11 @@
+Patient ID,Patient Name,Age,Gender,Blood Type,Medical Condition,Date of Admission,Discharge Date,Doctor,Hospital,Room Number,Admission Type,Medication,Treatment Notes
+P001,John Matthews,45,Male,O+,Hypertension,2026-01-15,2026-01-20,Dr. Sarah Collins,City General Hospital,101,Urgent,Amlodipine,"Patient admitted with high BP 180/110. Started on Amlodipine 5mg. BP stabilized after 3 days."
+P002,Priya Sharma,32,Female,A+,Diabetes Type 2,2026-01-18,2026-01-25,Dr. Rajesh Kumar,Apollo Medical Center,205,Elective,Metformin,"Routine diabetes management. HbA1c at 8.2. Metformin dosage increased to 1000mg twice daily."
+P003,Michael Brown,67,Male,B+,Coronary Artery Disease,2026-01-20,2026-02-01,Dr. Linda Park,City General Hospital,302,Emergency,Aspirin,"Emergency admission. ECG showed ST elevation. Angioplasty performed. Aspirin 75mg prescribed."
+P004,Angela Davis,54,Female,AB-,Breast Cancer Stage 2,2026-01-22,2026-02-10,Dr. James Wilson,Oncology Center,410,Urgent,Tamoxifen,"Chemotherapy cycle 3 initiated. Patient tolerating treatment well. Follow-up in 3 weeks."
+P005,Robert Thompson,71,Male,O-,COPD,2026-01-25,2026-02-03,Dr. Nancy Lee,Respiratory Clinic,115,Emergency,Salbutamol,"Acute exacerbation of COPD. Oxygen therapy administered. Salbutamol nebulization every 4 hours."
+P006,Susan Clark,29,Female,A-,Appendicitis,2026-01-28,2026-01-31,Dr. Mark Evans,City General Hospital,208,Emergency,Amoxicillin,"Laparoscopic appendectomy performed successfully. Post-op antibiotics prescribed for 5 days."
+P007,David Wilson,48,Male,B-,Kidney Stone,2026-02-01,2026-02-04,Dr. Sarah Collins,Urology Center,112,Urgent,Ibuprofen,"Ureteroscopy performed. 8mm stone removed. Pain management with Ibuprofen 400mg."
+P008,Emily Johnson,36,Female,O+,Asthma,2026-02-03,2026-02-06,Dr. Linda Park,Respiratory Clinic,220,Elective,Montelukast,"Routine asthma review. Peak flow improved. Montelukast added to existing inhaler regimen."
+P009,James Anderson,55,Male,A+,Type 1 Diabetes,2026-02-05,2026-02-08,Dr. Rajesh Kumar,Apollo Medical Center,305,Urgent,Insulin,"Hypoglycemic episode. Insulin dosage adjusted. Continuous glucose monitoring recommended."
+P010,Lisa Martinez,42,Female,AB+,Migraine,2026-02-07,2026-02-09,Dr. James Wilson,Neurology Center,118,Elective,Sumatriptan,"Chronic migraine management. MRI normal. Sumatriptan prescribed for acute episodes."

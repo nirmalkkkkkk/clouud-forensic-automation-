@@ -1,0 +1,16 @@
+Lab Report ID,Patient ID,Patient Name,Age,Gender,Test Date,Report Date,Doctor,Hospital,Test Name,Result Value,Unit,Normal Range,Status,Remarks
+LR-2026-001,P001,John Matthews,45,Male,2026-01-15,2026-01-16,Dr. Sarah Collins,City General Hospital,Complete Blood Count,13.5,g/dL,13.0-17.0,Normal,Hemoglobin within normal range
+LR-2026-002,P001,John Matthews,45,Male,2026-01-15,2026-01-16,Dr. Sarah Collins,City General Hospital,Blood Pressure,180/110,mmHg,120/80,Abnormal,Stage 2 Hypertension - Immediate treatment required
+LR-2026-003,P001,John Matthews,45,Male,2026-01-15,2026-01-16,Dr. Sarah Collins,City General Hospital,Lipid Profile - LDL,145,mg/dL,<100,Abnormal,High LDL - Statin therapy recommended
+LR-2026-004,P002,Priya Sharma,32,Female,2026-01-18,2026-01-19,Dr. Rajesh Kumar,Apollo Medical Center,HbA1c,8.2,%,<7.0,Abnormal,Poor glycemic control - Medication adjustment needed
+LR-2026-005,P002,Priya Sharma,32,Female,2026-01-18,2026-01-19,Dr. Rajesh Kumar,Apollo Medical Center,Fasting Blood Glucose,185,mg/dL,70-100,Abnormal,Elevated fasting glucose - Diabetes management required
+LR-2026-006,P003,Michael Brown,67,Male,2026-01-20,2026-01-20,Dr. Linda Park,City General Hospital,ECG,ST Elevation,N/A,Normal Sinus Rhythm,Abnormal,STEMI detected - Emergency angioplasty required
+LR-2026-007,P003,Michael Brown,67,Male,2026-01-20,2026-01-21,Dr. Linda Park,City General Hospital,Troponin I,2.8,ng/mL,<0.04,Abnormal,Elevated Troponin - Confirms myocardial infarction
+LR-2026-008,P004,Angela Davis,54,Female,2026-01-22,2026-01-23,Dr. James Wilson,Oncology Center,CA 125 Tumor Marker,68,U/mL,<35,Abnormal,Elevated CA 125 - Monitor during chemotherapy
+LR-2026-009,P005,Robert Thompson,71,Male,2026-01-25,2026-01-25,Dr. Nancy Lee,Respiratory Clinic,Spirometry FEV1,48,%,>80,Abnormal,Severe airflow obstruction - COPD Stage 3
+LR-2026-010,P005,Robert Thompson,71,Male,2026-01-25,2026-01-26,Dr. Nancy Lee,Respiratory Clinic,Arterial Blood Gas pH,7.31,pH,7.35-7.45,Abnormal,Mild respiratory acidosis - Oxygen therapy needed
+LR-2026-011,P006,Susan Clark,29,Female,2026-01-28,2026-01-28,Dr. Mark Evans,City General Hospital,WBC Count,14.5,x10^9/L,4.5-11.0,Abnormal,Elevated WBC - Confirms infection/appendicitis
+LR-2026-012,P007,David Wilson,48,Male,2026-02-01,2026-02-01,Dr. Sarah Collins,Urology Center,Urine Analysis,Hematuria,N/A,No blood,Abnormal,Blood in urine - Confirms kidney stone presence
+LR-2026-013,P008,Emily Johnson,36,Female,2026-02-03,2026-02-04,Dr. Linda Park,Respiratory Clinic,Peak Flow Rate,380,L/min,400-600,Abnormal,Below normal - Asthma not fully controlled
+LR-2026-014,P009,James Anderson,55,Male,2026-02-05,2026-02-05,Dr. Rajesh Kumar,Apollo Medical Center,Blood Glucose Random,42,mg/dL,70-140,Abnormal,Hypoglycemia - Immediate glucose intervention needed
+LR-2026-015,P010,Lisa Martinez,42,Female,2026-02-07,2026-02-08,Dr. James Wilson,Neurology Center,MRI Brain,No abnormality,N/A,No abnormality,Normal,MRI within normal limits - Migraine diagnosis confirmed

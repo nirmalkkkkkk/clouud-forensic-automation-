@@ -1,0 +1,54 @@
+================================================
+MONTHLY BILLING SUMMARY REPORT
+================================================
+Report Period   : January - February 2026
+Generated On    : 2026-02-15
+Prepared By     : Billing Department
+Hospital        : City General Hospital & Affiliates
+================================================
+
+REVENUE SUMMARY
+---------------
+Total Invoices Raised       : 10
+Total Billed Amount         : $536,100.00
+Total Insurance Covered     : $342,000.00
+Total Patient Due           : $129,800.00
+Total Amount Collected      : $64,300.00
+Total Pending Amount        : $65,500.00
+
+PAYMENT STATUS BREAKDOWN
+------------------------
+Paid            : 6 invoices   ($64,300.00)
+Pending         : 3 invoices   ($34,800.00)
+Partial Payment : 1 invoice    ($25,000.00)
+
+INSURANCE PROVIDER SUMMARY
+---------------------------
+Blue Cross          : 2 patients    $67,000.00 covered
+Medicare            : 2 patients    $55,000.00 covered
+Aetna               : 2 patients    $75,000.00 covered
+UnitedHealthcare    : 2 patients    $82,000.00 covered
+Cigna               : 2 patients    $48,000.00 covered
+
+DEPARTMENT WISE BILLING
+------------------------
+Cardiology          : $105,200.00
+Oncology            : $85,000.00
+Surgery             : $57,500.00
+Endocrinology       : $54,100.00
+Urology             : $48,000.00
+Pulmonology         : $42,500.00
+Neurology           : $30,300.00
+
+OVERDUE ACCOUNTS
+----------------
+Patient ID  Patient Name        Amount Due    Days Overdue
+P002        Priya Sharma        $11,800.00    28 days
+P007        David Wilson        $13,000.00    14 days
+P009        James Anderson      $10,000.00    10 days
+
+ACTION REQUIRED: Overdue accounts to be followed up immediately.
+
+================================================
+END OF REPORT
+================================================

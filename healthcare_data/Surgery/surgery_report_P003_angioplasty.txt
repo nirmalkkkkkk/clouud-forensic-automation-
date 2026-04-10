@@ -1,0 +1,70 @@
+================================================
+OPERATION THEATRE SURGICAL REPORT
+================================================
+Surgery ID      : SUR-2026-101
+Patient ID      : P003
+Patient Name    : Rajan Krishnan
+Age / Gender    : 67 / Male
+Surgery Date    : 2026-01-14
+Hospital        : Amrita Hospital Kochi
+Operation Theatre: OT-3
+================================================
+
+PRE-OPERATIVE DETAILS
+---------------------
+Admitting Diagnosis : Acute Myocardial Infarction (STEMI)
+Planned Procedure   : Percutaneous Coronary Intervention
+Surgery Type        : Emergency
+Pre-op BP           : 95/60 mmHg (Hypotensive)
+Pre-op Heart Rate   : 118 bpm (Tachycardic)
+Pre-op SpO2         : 88% (Low - Oxygen given)
+Consent Obtained    : Yes - Family consent (emergency)
+Pre-op Medications  : Aspirin 300mg + Clopidogrel 600mg loading
+
+SURGICAL TEAM
+-------------
+Lead Surgeon        : Dr. Anitha Rajan (Interventional Cardiologist)
+Anaesthesiologist   : Dr. Pradeep Menon
+Scrub Nurse         : Nurse Latha K
+Circulating Nurse   : Nurse Asha R
+Cath Lab Technician : Mr. Biju Thomas
+
+INTRA-OPERATIVE DETAILS
+-----------------------
+Procedure           : Percutaneous Coronary Intervention (PCI)
+Anaesthesia Type    : Local with conscious sedation
+Start Time          : 14:32 hrs
+End Time            : 16:45 hrs
+Total Duration      : 133 minutes
+Artery Treated      : Right Coronary Artery (RCA)
+Blockage Found      : 95% stenosis in proximal RCA
+Stent Placed        : Drug Eluting Stent 3.5 x 28mm
+Contrast Used       : Iohexol 180ml
+Blood Loss          : 50 ml (Minimal)
+Complications       : None
+
+POST-OPERATIVE DETAILS
+-----------------------
+Post-op BP          : 118/76 mmHg (Improved)
+Post-op Heart Rate  : 82 bpm (Normal)
+Post-op SpO2        : 98% (Normal)
+Shifted To          : ICU - Cardiac Care Unit
+Post-op Medications : Dual antiplatelet therapy continued
+                      Statin therapy initiated
+                      Beta blocker added
+
+SURGEON NOTES
+-------------
+Procedure performed successfully. RCA 95% blockage
+cleared with stent placement. Patient hemodynamically
+stable post procedure. Prognosis good with medication
+compliance and lifestyle modification.
+
+Follow Up           : 2026-01-28 (2 weeks post procedure)
+                      2026-02-14 (1 month post procedure)
+
+Reported By         : Dr. Anitha Rajan
+Verified By         : Dr. Pradeep Menon (Anaesthesiologist)
+================================================
+END OF REPORT - Amrita Hospital OT Department
+================================================

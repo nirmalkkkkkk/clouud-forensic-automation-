@@ -1,0 +1,68 @@
+================================================
+PHARMACY DRUG INVENTORY & DISPENSING REPORT
+================================================
+Report ID       : PHARM-2026-012
+Report Period   : January - February 2026
+Generated On    : 2026-02-10
+Prepared By     : PharmD. Rema Krishnan
+Hospital        : Apollo Hospital Thrissur Pharmacy
+================================================
+
+DISPENSING SUMMARY
+------------------
+Total Prescriptions Processed : 14
+Total Medications Dispensed   : 18
+Total Patients Served         : 10
+Pending Prescriptions         : 0
+
+TOP MEDICATIONS DISPENSED
+--------------------------
+Medication          Quantity        Category
+Amlodipine 5mg      90 tablets      Antihypertensive
+Atorvastatin 10mg   90 tablets      Lipid Lowering
+Metformin 1000mg    180 tablets     Antidiabetic
+Glipizide 5mg       60 tablets      Antidiabetic
+Aspirin 75mg        180 tablets     Antiplatelet
+Clopidogrel 75mg    180 tablets     Antiplatelet
+Rosuvastatin 20mg   90 tablets      Lipid Lowering
+Tamoxifen 20mg      365 tablets     Anticancer
+Salbutamol Inhaler  2 inhalers      Bronchodilator
+Amoxicillin 500mg   15 tablets      Antibiotic
+Ibuprofen 400mg     21 tablets      NSAID
+Montelukast 10mg    90 tablets      Antiasthmatic
+Insulin Glargine    1 vial          Antidiabetic
+Sumatriptan 50mg    9 tablets       Antimigraine
+
+DRUG CATEGORY BREAKDOWN
+------------------------
+Antihypertensive    : 1 drug     90 units
+Antidiabetic        : 3 drugs    241 units
+Antiplatelet        : 2 drugs    360 units
+Lipid Lowering      : 2 drugs    180 units
+Anticancer          : 1 drug     365 units
+Antibiotic          : 1 drug     15 units
+Bronchodilator      : 1 drug     2 units
+NSAID               : 1 drug     21 units
+Antiasthmatic       : 1 drug     90 units
+Antimigraine        : 1 drug     9 units
+
+DRUG INTERACTION ALERTS
+------------------------
+Patient P003 (Rajan Krishnan):
+- Aspirin + Clopidogrel : Dual antiplatelet therapy
+  Monitor for bleeding. Prescribed intentionally
+  post angioplasty under cardiologist supervision.
+
+COLD STORAGE DRUGS
+------------------
+Insulin Glargine : Stored at 2-8 degrees Celsius
+                   Dispensed with cold chain maintained.
+
+LOW STOCK ALERTS
+----------------
+Tamoxifen 20mg  : Stock running low - Reorder required
+Insulin Glargine: Stock at 40% - Monitor closely
+
+================================================
+END OF REPORT - Apollo Pharmacy Department
+================================================

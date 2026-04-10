@@ -1,0 +1,62 @@
+========================================
+ELECTRONIC HEALTH RECORD - CASE SUMMARY
+========================================
+Case Reference  : EHR-2026-0045
+Date Created    : 2026-01-15
+Last Updated    : 2026-02-10
+Prepared By     : Dr. Sarah Collins
+Hospital        : City General Hospital
+========================================
+
+PATIENT INFORMATION
+-------------------
+Name            : John Matthews
+Patient ID      : P001
+Date of Birth   : 1981-03-22
+Age             : 45
+Gender          : Male
+Blood Type      : O+
+Contact         : +1-555-0123
+Emergency Contact: Mary Matthews (Wife) - +1-555-0124
+
+ADMISSION DETAILS
+-----------------
+Admission Date  : 2026-01-15
+Discharge Date  : 2026-01-20
+Room Number     : 101
+Admission Type  : Urgent
+Admitting Doctor: Dr. Sarah Collins
+
+DIAGNOSIS
+---------
+Primary         : Hypertension (Stage 2)
+Secondary       : Obesity (BMI 32.4)
+BP on Admission : 180/110 mmHg
+Heart Rate      : 92 bpm
+Temperature     : 98.6 F
+
+TREATMENT PLAN
+--------------
+1. Amlodipine 5mg - Once daily (Morning)
+2. Low sodium diet strictly followed
+3. Daily BP monitoring every 6 hours
+4. Cardiology consultation scheduled
+
+PROGRESS NOTES
+--------------
+Day 1 (2026-01-15): BP 180/110. Started Amlodipine. Bed rest advised.
+Day 2 (2026-01-16): BP 165/100. Slight improvement. Diet chart given.
+Day 3 (2026-01-17): BP 155/95. Continuing medication.
+Day 4 (2026-01-18): BP 140/90. Significant improvement noted.
+Day 5 (2026-01-19): BP 130/85. Patient stable. Discharge planned.
+Day 6 (2026-01-20): BP 128/82. Discharged with follow-up in 2 weeks.
+
+DISCHARGE SUMMARY
+-----------------
+Patient discharged in stable condition. Advised to continue
+Amlodipine 5mg daily. Follow-up appointment: 2026-02-03.
+Lifestyle modification counseling provided.
+
+========================================
+END OF RECORD
+========================================

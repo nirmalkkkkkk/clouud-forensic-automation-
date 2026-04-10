@@ -1,0 +1,63 @@
+================================================
+LABORATORY INVESTIGATION REPORT
+================================================
+Report ID       : LR-2026-007
+Patient ID      : P003
+Patient Name    : Michael Brown
+Age / Gender    : 67 / Male
+Doctor          : Dr. Linda Park
+Hospital        : City General Hospital
+Test Date       : 2026-01-20
+Report Date     : 2026-01-21
+================================================
+
+CARDIAC ENZYME PANEL
+--------------------
+
+1. TROPONIN I
+   Result      : 2.8 ng/mL
+   Normal Range: < 0.04 ng/mL
+   Status      : *** CRITICALLY ABNORMAL ***
+   Remarks     : Significantly elevated Troponin I confirms
+                 acute myocardial infarction (heart attack).
+                 Emergency intervention already initiated.
+
+2. CK-MB (Creatine Kinase MB)
+   Result      : 48 U/L
+   Normal Range: 0 - 25 U/L
+   Status      : ABNORMAL
+   Remarks     : Elevated CK-MB supports diagnosis of MI.
+
+3. BNP (Brain Natriuretic Peptide)
+   Result      : 820 pg/mL
+   Normal Range: < 100 pg/mL
+   Status      : CRITICALLY ABNORMAL
+   Remarks     : Severely elevated. Indicates significant
+                 cardiac stress and heart failure risk.
+
+COMPLETE BLOOD COUNT
+--------------------
+Hemoglobin      : 12.8 g/dL    (Normal: 13-17)     LOW
+WBC Count       : 13.2 x10^9/L (Normal: 4.5-11)    HIGH
+Platelets       : 210 x10^9/L  (Normal: 150-400)   Normal
+RBC Count       : 4.2 x10^6/uL (Normal: 4.5-5.9)  LOW
+
+LIPID PROFILE
+-------------
+Total Cholesterol : 242 mg/dL  (Normal: <200)      HIGH
+LDL Cholesterol   : 168 mg/dL  (Normal: <100)      HIGH
+HDL Cholesterol   : 32 mg/dL   (Normal: >40)       LOW
+Triglycerides     : 210 mg/dL  (Normal: <150)      HIGH
+
+CLINICAL INTERPRETATION
+------------------------
+Results are consistent with acute myocardial infarction.
+Emergency angioplasty has been performed. Patient is in
+ICU under continuous monitoring. Statin therapy and
+anticoagulation treatment initiated.
+
+Reported By     : Dr. Anita Rao (Pathologist)
+Verified By     : Dr. Linda Park (Cardiologist)
+================================================
+END OF REPORT
+================================================

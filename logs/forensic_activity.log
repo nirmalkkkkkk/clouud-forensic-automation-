@@ -1,0 +1,252 @@
+2026-03-02 12:00:22,435 - INFO - Started forensic scan on: sample_healthcare_data
+2026-03-02 12:00:22,436 - ERROR - Error scanning file sample_healthcare_data\patient1.txt: strptime() argument 1 must be str, not datetime.datetime
+2026-03-02 12:00:22,437 - ERROR - Error scanning file sample_healthcare_data\report1.txt: strptime() argument 1 must be str, not datetime.datetime
+2026-03-02 12:00:22,437 - ERROR - Error scanning file sample_healthcare_data\test.txt: strptime() argument 1 must be str, not datetime.datetime
+2026-03-02 12:06:18,950 - INFO - Started forensic scan on: sample_healthcare_data
+2026-03-02 12:06:18,981 - INFO - Successfully scanned: sample_healthcare_data\patient1.txt
+2026-03-02 12:06:18,982 - INFO - Successfully scanned: sample_healthcare_data\report1.txt
+2026-03-02 12:06:18,982 - INFO - Successfully scanned: sample_healthcare_data\test.txt
+2026-03-02 12:06:18,984 - INFO - Evidence report generated successfully.
+2026-03-02 12:45:27,790 - INFO - === Investigation Started ===
+2026-03-02 12:45:27,790 - INFO - Case ID: HC-2026-001
+2026-03-02 12:45:27,790 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-02 12:45:27,800 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-02 12:45:27,802 - INFO - Evidence report generated successfully.
+2026-03-02 12:45:27,802 - INFO - === Investigation Completed Successfully ===
+2026-03-02 12:49:46,095 - INFO - === Investigation Started ===
+2026-03-02 12:49:46,095 - INFO - Case ID: HC-2026-001
+2026-03-02 12:49:46,095 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-02 12:49:46,105 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-02 12:49:46,106 - INFO - Evidence report generated successfully.
+2026-03-02 12:49:46,106 - INFO - === Investigation Completed Successfully ===
+2026-03-05 10:51:05,301 - INFO - === Investigation Started ===
+2026-03-05 10:51:05,331 - INFO - Case ID: HC-2026-001
+2026-03-05 10:51:05,331 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-05 10:51:05,346 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-05 10:51:05,348 - INFO - Evidence report generated successfully.
+2026-03-05 10:51:05,348 - INFO - === Investigation Completed Successfully ===
+2026-03-06 10:14:04,630 - INFO - === Investigation Started ===
+2026-03-06 10:14:04,630 - INFO - Case ID: HC-2026-001
+2026-03-06 10:14:04,630 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-06 10:14:04,643 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-06 10:14:04,645 - INFO - Evidence report generated successfully.
+2026-03-06 10:14:04,645 - INFO - === Investigation Completed Successfully ===
+2026-03-06 14:37:28,084 - INFO - === Investigation Started ===
+2026-03-06 14:37:28,115 - INFO - Case ID: HC-2026-001
+2026-03-06 14:37:28,115 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-06 14:37:28,125 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-06 14:37:28,127 - INFO - Evidence report generated successfully.
+2026-03-06 14:37:28,127 - INFO - === Investigation Completed Successfully ===
+2026-03-07 11:27:25,665 - ERROR - Invalid directory path provided.
+2026-03-08 11:59:12,542 - INFO - === Investigation Started ===
+2026-03-08 11:59:12,543 - INFO - Case ID: HC-2026-001
+2026-03-08 11:59:12,543 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-08 11:59:12,569 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-08 11:59:12,571 - INFO - Evidence report generated successfully.
+2026-03-08 11:59:12,571 - INFO - === Investigation Completed Successfully ===
+2026-03-08 12:05:21,533 - INFO - === Investigation Started ===
+2026-03-08 12:05:21,533 - INFO - Case ID: HC-2026-001
+2026-03-08 12:05:21,533 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-08 12:05:21,559 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-08 12:05:21,579 - INFO - Evidence report generated successfully.
+2026-03-08 12:05:21,579 - INFO - === Investigation Completed Successfully ===
+2026-03-08 12:06:04,230 - INFO - === Investigation Started ===
+2026-03-08 12:06:04,231 - INFO - Case ID: HC-2026-001
+2026-03-08 12:06:04,231 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-08 12:06:04,257 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-08 12:06:04,309 - INFO - Evidence report generated successfully.
+2026-03-08 12:06:04,309 - INFO - === Investigation Completed Successfully ===
+2026-03-09 21:14:28,879 - INFO - === Investigation Started ===
+2026-03-09 21:14:28,880 - INFO - Case ID: HC-2026-001
+2026-03-09 21:14:28,880 - INFO - Scanning Directory: sample_healthcare_data
+2026-03-09 21:14:28,905 - INFO - Scanned Successfully: sample_healthcare_data\EHR\healthcare_dataset.csv
+2026-03-09 21:14:28,919 - INFO - Evidence report generated successfully.
+2026-03-09 21:14:28,919 - INFO - === Investigation Completed Successfully ===
+2026-04-07 12:16:16,761 - INFO - === Investigation Started ===
+2026-04-07 12:16:16,792 - INFO - Case ID: HC-2026-001
+2026-04-07 12:16:16,792 - INFO - Scanning Directory: sample_healthcare_data
+2026-04-07 12:16:16,794 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_invoices_2026.csv
+2026-04-07 12:16:16,794 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_payment_summary.txt
+2026-04-07 12:16:16,795 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-07 12:16:16,795 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_patient_records.csv
+2026-04-07 12:16:16,795 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-07 12:16:16,796 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-07 12:16:16,831 - INFO - Evidence report generated successfully.
+2026-04-07 12:16:16,831 - INFO - === Investigation Completed Successfully ===
+2026-04-07 12:17:19,040 - INFO - === Investigation Started ===
+2026-04-07 12:17:19,040 - INFO - Case ID: HC-2026-001
+2026-04-07 12:17:19,041 - INFO - Scanning Directory: sample_healthcare_data
+2026-04-07 12:17:19,042 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_invoices_2026.csv
+2026-04-07 12:17:19,042 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_payment_summary.txt
+2026-04-07 12:17:19,043 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-07 12:17:19,043 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_patient_records.csv
+2026-04-07 12:17:19,043 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-07 12:17:19,044 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-07 12:17:19,073 - INFO - Evidence report generated successfully.
+2026-04-07 12:17:19,073 - INFO - === Investigation Completed Successfully ===
+2026-04-08 11:48:24,870 - INFO - === Investigation Started ===
+2026-04-08 11:48:24,901 - INFO - Case ID: HC-2026-001
+2026-04-08 11:48:24,901 - INFO - Scanning Directory: sample_healthcare_data
+2026-04-08 11:48:24,905 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_invoices_2026.csv
+2026-04-08 11:48:24,906 - INFO - Scanned Successfully: sample_healthcare_data\billing\billing_payment_summary.txt
+2026-04-08 11:48:24,907 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-08 11:48:24,908 - INFO - Scanned Successfully: sample_healthcare_data\EHR\ehr_patient_records.csv
+2026-04-08 11:48:24,909 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-08 11:48:24,910 - INFO - Scanned Successfully: sample_healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-08 11:48:24,946 - INFO - Evidence report generated successfully.
+2026-04-08 11:48:24,946 - INFO - === Investigation Completed Successfully ===
+2026-04-10 11:16:39,669 - INFO - === Investigation Started ===
+2026-04-10 11:16:39,699 - INFO - Case ID: HC-2026-001
+2026-04-10 11:16:39,700 - INFO - Scanning Directory: healthcare_data
+2026-04-10 11:16:39,703 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 11:16:39,703 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 11:16:39,703 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 11:16:39,704 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 11:16:39,704 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 11:16:39,705 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 11:16:39,737 - INFO - Evidence report generated successfully.
+2026-04-10 11:16:39,737 - INFO - === Investigation Completed Successfully ===
+2026-04-10 11:35:39,212 - INFO - === Investigation Started ===
+2026-04-10 11:35:39,213 - INFO - Case ID: HC-2026-001
+2026-04-10 11:35:39,213 - INFO - Scanning Directory: healthcare_data
+2026-04-10 11:35:39,214 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 11:35:39,214 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 11:35:39,215 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 11:35:39,215 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 11:35:39,216 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 11:35:39,216 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 11:35:39,217 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 11:35:39,217 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 11:35:39,218 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 11:35:39,218 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 11:35:39,260 - INFO - Evidence report generated successfully.
+2026-04-10 11:35:39,260 - INFO - === Investigation Completed Successfully ===
+2026-04-10 11:36:08,615 - INFO - === Investigation Started ===
+2026-04-10 11:36:08,616 - INFO - Case ID: HC-2026-001
+2026-04-10 11:36:08,616 - INFO - Scanning Directory: healthcare_data
+2026-04-10 11:36:08,617 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 11:36:08,617 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 11:36:08,618 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 11:36:08,618 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 11:36:08,619 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 11:36:08,619 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 11:36:08,619 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 11:36:08,620 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 11:36:08,620 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 11:36:08,621 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 11:36:08,658 - INFO - Evidence report generated successfully.
+2026-04-10 11:36:08,658 - INFO - === Investigation Completed Successfully ===
+2026-04-10 14:07:27,552 - INFO - === Investigation Started ===
+2026-04-10 14:07:27,553 - INFO - Case ID: HC-2026-001
+2026-04-10 14:07:27,553 - INFO - Scanning Directory: healthcare_data
+2026-04-10 14:07:27,557 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 14:07:27,558 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 14:07:27,558 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 14:07:27,559 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 14:07:27,559 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 14:07:27,560 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 14:07:27,561 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 14:07:27,561 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 14:07:27,562 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 14:07:27,563 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 14:07:27,585 - INFO - Evidence report generated successfully.
+2026-04-10 14:07:27,586 - INFO - === Investigation Completed Successfully ===
+2026-04-10 14:11:11,393 - INFO - === Investigation Started ===
+2026-04-10 14:11:11,393 - INFO - Case ID: HC-2026-001
+2026-04-10 14:11:11,394 - INFO - Scanning Directory: healthcare_data
+2026-04-10 14:11:11,396 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 14:11:11,396 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 14:11:11,396 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 14:11:11,397 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 14:11:11,397 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 14:11:11,397 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 14:11:11,398 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 14:11:11,398 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 14:11:11,398 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 14:11:11,398 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 14:11:11,425 - INFO - Evidence report generated successfully.
+2026-04-10 14:11:11,425 - INFO - === Investigation Completed Successfully ===
+2026-04-10 14:28:18,665 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 14:28:18,665 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-10 14:28:18,666 - INFO -  * Restarting with stat
+2026-04-10 14:28:19,024 - WARNING -  * Debugger is active!
+2026-04-10 14:28:19,029 - INFO -  * Debugger PIN: 777-836-901
+2026-04-10 14:28:23,296 - INFO - 127.0.0.1 - - [10/Apr/2026 14:28:23] "GET / HTTP/1.1" 200 -
+2026-04-10 14:28:23,338 - INFO - 127.0.0.1 - - [10/Apr/2026 14:28:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-10 14:28:23,339 - INFO - 127.0.0.1 - - [10/Apr/2026 14:28:23] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-10 14:28:25,004 - INFO - 127.0.0.1 - - [10/Apr/2026 14:28:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-10 14:28:26,245 - INFO - === Investigation Started ===
+2026-04-10 14:28:26,245 - INFO - Case ID: HC-2026-001
+2026-04-10 14:28:26,245 - INFO - Scanning Directory: healthcare_data
+2026-04-10 14:28:26,246 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 14:28:26,247 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 14:28:26,247 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 14:28:26,247 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 14:28:26,248 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 14:28:26,248 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 14:28:26,248 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 14:28:26,249 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 14:28:26,249 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 14:28:26,249 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 14:28:26,276 - INFO - Evidence report generated successfully.
+2026-04-10 14:28:26,276 - INFO - === Investigation Completed Successfully ===
+2026-04-10 14:28:26,276 - INFO - 127.0.0.1 - - [10/Apr/2026 14:28:26] "POST /api/scan HTTP/1.1" 200 -
+2026-04-10 14:39:00,805 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 14:39:00,805 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-10 14:39:00,806 - INFO -  * Restarting with stat
+2026-04-10 14:39:01,373 - WARNING -  * Debugger is active!
+2026-04-10 14:39:01,375 - INFO -  * Debugger PIN: 777-836-901
+2026-04-10 14:59:41,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 14:59:41,892 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-10 14:59:41,893 - INFO -  * Restarting with stat
+2026-04-10 14:59:42,439 - WARNING -  * Debugger is active!
+2026-04-10 14:59:42,440 - INFO -  * Debugger PIN: 777-836-901
+2026-04-10 15:03:32,726 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:32] "GET / HTTP/1.1" 200 -
+2026-04-10 15:03:32,733 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:32] "GET /api/stats HTTP/1.1" 200 -
+2026-04-10 15:03:32,740 - INFO - === Investigation Started ===
+2026-04-10 15:03:32,740 - INFO - Case ID: HC-2026-001
+2026-04-10 15:03:32,740 - INFO - Scanning Directory: healthcare_data
+2026-04-10 15:03:32,741 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 15:03:32,742 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 15:03:32,742 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 15:03:32,743 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 15:03:32,743 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 15:03:32,744 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 15:03:32,744 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 15:03:32,745 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 15:03:32,745 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 15:03:32,746 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 15:03:32,791 - INFO - Evidence report generated successfully.
+2026-04-10 15:03:32,791 - INFO - === Investigation Completed Successfully ===
+2026-04-10 15:03:32,793 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:32] "POST /api/scan HTTP/1.1" 200 -
+2026-04-10 15:03:32,798 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:32] "GET /api/logs HTTP/1.1" 200 -
+2026-04-10 15:03:32,804 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:32] "GET /api/download-report HTTP/1.1" 200 -
+2026-04-10 15:03:46,329 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:46] "GET / HTTP/1.1" 200 -
+2026-04-10 15:03:46,424 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:46] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-10 15:03:46,426 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:46] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-10 15:03:46,904 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:46] "GET /api/stats HTTP/1.1" 200 -
+2026-04-10 15:03:47,898 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-10 15:03:55,141 - INFO - === Investigation Started ===
+2026-04-10 15:03:55,142 - INFO - Case ID: HC-2026-001
+2026-04-10 15:03:55,142 - INFO - Scanning Directory: healthcare_data
+2026-04-10 15:03:55,144 - INFO - Scanned Successfully: healthcare_data\billing\billing_invoices_2026.csv
+2026-04-10 15:03:55,144 - INFO - Scanned Successfully: healthcare_data\billing\billing_payment_summary.txt
+2026-04-10 15:03:55,145 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_case_summary_P001.txt
+2026-04-10 15:03:55,146 - INFO - Scanned Successfully: healthcare_data\EHR\ehr_patient_records.csv
+2026-04-10 15:03:55,146 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_report_P003_cardiac.txt
+2026-04-10 15:03:55,147 - INFO - Scanned Successfully: healthcare_data\lab reports\lab_test_results_2026.csv
+2026-04-10 15:03:55,147 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_drug_inventory.txt
+2026-04-10 15:03:55,148 - INFO - Scanned Successfully: healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv
+2026-04-10 15:03:55,148 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_records_2026.csv
+2026-04-10 15:03:55,149 - INFO - Scanned Successfully: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt
+2026-04-10 15:03:55,193 - INFO - Evidence report generated successfully.
+2026-04-10 15:03:55,193 - INFO - === Investigation Completed Successfully ===
+2026-04-10 15:03:55,225 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:55] "POST /api/scan HTTP/1.1" 200 -
+2026-04-10 15:03:55,278 - INFO - 127.0.0.1 - - [10/Apr/2026 15:03:55] "GET /api/stats HTTP/1.1" 200 -
+2026-04-10 15:04:13,349 - INFO - 127.0.0.1 - - [10/Apr/2026 15:04:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-10 15:04:13,362 - INFO - 127.0.0.1 - - [10/Apr/2026 15:04:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-10 15:04:19,074 - INFO - 127.0.0.1 - - [10/Apr/2026 15:04:19] "GET /api/logs HTTP/1.1" 200 -
+2026-04-10 15:04:25,277 - INFO - 127.0.0.1 - - [10/Apr/2026 15:04:25] "GET /api/stats HTTP/1.1" 200 -

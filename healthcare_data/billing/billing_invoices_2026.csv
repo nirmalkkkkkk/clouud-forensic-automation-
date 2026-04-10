@@ -1,0 +1,11 @@
+Invoice ID,Patient ID,Patient Name,Date of Service,Discharge Date,Doctor,Hospital,Department,Room Charges,Doctor Fees,Medication Charges,Lab Charges,Surgery Charges,Insurance Provider,Insurance Covered,Patient Due,Payment Status,Payment Date
+INV-2026-001,P001,John Matthews,2026-01-15,2026-01-20,Dr. Sarah Collins,City General Hospital,Cardiology,15000.00,8000.00,2500.00,3200.00,0.00,Blue Cross,22000.00,6700.00,Paid,2026-01-25
+INV-2026-002,P002,Priya Sharma,2026-01-18,2026-01-25,Dr. Rajesh Kumar,Apollo Medical Center,Endocrinology,18000.00,6500.00,3100.00,4200.00,0.00,Medicare,20000.00,11800.00,Pending,
+INV-2026-003,P003,Michael Brown,2026-01-20,2026-02-01,Dr. Linda Park,City General Hospital,Cardiology,25000.00,15000.00,5500.00,8000.00,45000.00,Aetna,75000.00,23500.00,Paid,2026-02-05
+INV-2026-004,P004,Angela Davis,2026-01-22,2026-02-10,Dr. James Wilson,Oncology Center,Oncology,35000.00,20000.00,18000.00,12000.00,0.00,UnitedHealthcare,60000.00,25000.00,Partial,2026-02-15
+INV-2026-005,P005,Robert Thompson,2026-01-25,2026-02-03,Dr. Nancy Lee,Respiratory Clinic,Pulmonology,20000.00,9000.00,4500.00,5500.00,0.00,Cigna,28000.00,11000.00,Paid,2026-02-08
+INV-2026-006,P006,Susan Clark,2026-01-28,2026-01-31,Dr. Mark Evans,City General Hospital,Surgery,12000.00,12000.00,3000.00,2500.00,28000.00,Blue Cross,45000.00,12500.00,Paid,2026-02-02
+INV-2026-007,P007,David Wilson,2026-02-01,2026-02-04,Dr. Sarah Collins,Urology Center,Urology,14000.00,10000.00,2200.00,3800.00,18000.00,Medicare,35000.00,13000.00,Pending,
+INV-2026-008,P008,Emily Johnson,2026-02-03,2026-02-06,Dr. Linda Park,Respiratory Clinic,Pulmonology,10000.00,7000.00,1800.00,2200.00,0.00,Aetna,15000.00,6000.00,Paid,2026-02-10
+INV-2026-009,P009,James Anderson,2026-02-05,2026-02-08,Dr. Rajesh Kumar,Apollo Medical Center,Endocrinology,13000.00,8500.00,4500.00,6000.00,0.00,UnitedHealthcare,22000.00,10000.00,Pending,
+INV-2026-010,P010,Lisa Martinez,2026-02-07,2026-02-09,Dr. James Wilson,Neurology Center,Neurology,11000.00,9000.00,2800.00,7500.00,0.00,Cigna,20000.00,10300.00,Paid,2026-02-12

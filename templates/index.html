@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Forensics Automation — Healthcare Edition | PRJN26-148</title>
+  <meta name="description" content="Professional cloud forensics web dashboard for healthcare breach investigation. Case PRJN26-148."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="/static/css/styles.css"/>
+</head>
+<body>
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  PAGE LOADER                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div id="page-loader">
+    <div class="loader-inner">
+      <div class="loader-shield"><i class="fa-solid fa-shield-virus"></i></div>
+      <p class="loader-text">Initializing Forensics Engine<span class="ellipsis"></span></p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  TOAST NOTIFICATION                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div id="toast-container"></div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  BACKGROUND AMBIENT SHAPES                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__blob ambient__blob--1"></div>
+    <div class="ambient__blob ambient__blob--2"></div>
+    <div class="ambient__blob ambient__blob--3"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!--  APP SHELL                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="app" id="app">
+
+    <!-- ─────── SIDEBAR ─────── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-icon">
+          <i class="fa-solid fa-shield-virus"></i>
+        </div>
+        <div class="sidebar__brand-text">
+          <span class="sidebar__brand-name">CyberForensics</span>
+          <span class="sidebar__brand-sub">Healthcare Edition</span>
+        </div>
+      </div>
+
+      <div class="sidebar__case-badge">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>PRJN26-148</span>
+      </div>
+
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#" class="sidebar__link active" data-section="dashboard" id="nav-dashboard">
+            <i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></a></li>
+          <li><a href="#" class="sidebar__link" data-section="scanner" id="nav-scanner">
+            <i class="fa-solid fa-radar"></i><span>Evidence Scanner</span></a></li>
+          <li><a href="#" class="sidebar__link" data-section="evidence" id="nav-evidence">
+            <i class="fa-solid fa-table-list"></i><span>Evidence Logs</span></a></li>
+          <li><a href="#" class="sidebar__link" data-section="activity" id="nav-activity">
+            <i class="fa-solid fa-chart-line"></i><span>Activity & Reports</span></a></li>
+          <li><a href="#" class="sidebar__link" data-section="logs" id="nav-logs">
+            <i class="fa-solid fa-terminal"></i><span>System Logs</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <div class="sidebar__avatar">N</div>
+          <div class="sidebar__user-info">
+            <p class="sidebar__user-name">Nirmal</p>
+            <p class="sidebar__user-role">Lead Investigator</p>
+          </div>
+        </div>
+        <div class="sidebar__status">
+          <span class="status-dot status-dot--live"></span>
+          <span>System Online</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ─────── MAIN ─────── -->
+    <main class="main" id="main-content">
+
+      <!-- TOP NAV BAR -->
+      <header class="topbar">
+        <div class="topbar__left">
+          <button class="topbar__hamburger" id="btn-toggle-sidebar" aria-label="Toggle sidebar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="topbar__breadcrumb" id="breadcrumb">Dashboard</div>
+        </div>
+        <div class="topbar__right">
+          <div class="topbar__datetime" id="topbar-datetime"></div>
+          <div class="topbar__divider"></div>
+          <button class="topbar__btn" title="Download Report" id="btn-nav-download">
+            <i class="fa-solid fa-download"></i>
+          </button>
+          <button class="topbar__btn" title="Refresh Stats" id="btn-refresh-stats">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SECTION: DASHBOARD                          -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section active" id="section-dashboard">
+        <div class="section__header">
+          <div>
+            <h1 class="section__title">Forensic Analysis Dashboard</h1>
+            <p class="section__subtitle">Monitoring healthcare data integrity across all scans — Case PRJN26-148</p>
+          </div>
+          <button class="btn btn--primary btn--glow" id="btn-go-to-scanner">
+            <i class="fa-solid fa-play"></i> Run New Scan
+          </button>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stat-grid" id="stat-grid">
+          <div class="stat-card stat-card--blue" id="stat-total-scans">
+            <div class="stat-card__icon"><i class="fa-solid fa-folder-open"></i></div>
+            <div class="stat-card__body">
+              <p class="stat-card__label">Total Scans Run</p>
+              <h2 class="stat-card__value" id="sv-total-scans">—</h2>
+            </div>
+            <div class="stat-card__trend" id="st-total-scans"></div>
+          </div>
+          <div class="stat-card stat-card--teal" id="stat-files-scanned">
+            <div class="stat-card__icon"><i class="fa-solid fa-file-lines"></i></div>
+            <div class="stat-card__body">
+              <p class="stat-card__label">Total Files Analysed</p>
+              <h2 class="stat-card__value" id="sv-total-files">—</h2>
+            </div>
+          </div>
+          <div class="stat-card stat-card--red" id="stat-high-risk">
+            <div class="stat-card__icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div class="stat-card__body">
+              <p class="stat-card__label">High-Risk Detections</p>
+              <h2 class="stat-card__value" id="sv-high-risk">—</h2>
+            </div>
+          </div>
+          <div class="stat-card stat-card--purple" id="stat-case">
+            <div class="stat-card__icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="stat-card__body">
+              <p class="stat-card__label">Active Investigator</p>
+              <h2 class="stat-card__value stat-card__value--sm" id="sv-investigator">—</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="chart-row">
+          <div class="chart-card glass-panel" id="chart-category-wrap">
+            <div class="chart-card__header">
+              <h3>File Category Distribution</h3>
+              <span class="chart-note">Latest scan</span>
+            </div>
+            <div class="chart-canvas-wrap"><canvas id="chart-category"></canvas></div>
+            <p class="chart-empty" id="chart-category-empty">No scan data yet. Run a scan to see results.</p>
+          </div>
+          <div class="chart-card glass-panel" id="chart-risk-wrap">
+            <div class="chart-card__header">
+              <h3>Risk Level Breakdown</h3>
+              <span class="chart-note">Latest scan</span>
+            </div>
+            <div class="chart-canvas-wrap"><canvas id="chart-risk"></canvas></div>
+            <p class="chart-empty" id="chart-risk-empty">No scan data yet. Run a scan to see results.</p>
+          </div>
+        </div>
+
+        <!-- Recent Scans -->
+        <div class="glass-panel table-panel" id="recent-scans-panel">
+          <div class="table-panel__header">
+            <h3><i class="fa-solid fa-clock-rotate-left"></i> Recent Scan History</h3>
+          </div>
+          <table class="data-table" id="recent-scans-table">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Directory Scanned</th>
+                <th>Files Found</th>
+                <th>High Risk</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="recent-scans-tbody">
+              <tr><td colspan="5" class="table-empty">No recent scans yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SECTION: EVIDENCE SCANNER                   -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section" id="section-scanner">
+        <div class="section__header">
+          <div>
+            <h1 class="section__title">Evidence Scanner</h1>
+            <p class="section__subtitle">Select a directory to run a full forensic sweep and collect evidence metadata</p>
+          </div>
+        </div>
+
+        <!-- Scanner Panel -->
+        <div class="scanner-panel glass-panel">
+          <div class="scanner-panel__icon">
+            <i class="fa-solid fa-radar"></i>
+          </div>
+          <h2 class="scanner-panel__title">Forensic Directory Scan</h2>
+          <p class="scanner-panel__desc">Enter an absolute path to a directory containing healthcare data files. The system will extract metadata, generate cryptographic hashes, detect anomalies, classify file categories, and assess breach risk.</p>
+
+          <div class="scanner-form" id="scanner-form">
+            <div class="form-group">
+              <label class="form-label" for="scan-path">
+                <i class="fa-regular fa-folder-open"></i> Target Directory Path
+              </label>
+              <div class="input-row">
+                <input type="text" id="scan-path" class="form-input" placeholder="e.g.  healthcare_data   or   C:\full\path\to\directory" value="healthcare_data"/>
+                <button class="btn btn--primary btn--glow btn--lg" id="btn-start-scan">
+                  <i class="fa-solid fa-bolt"></i> Launch Scan
+                </button>
+              </div>
+              <p class="form-hint"><i class="fa-solid fa-circle-info"></i> Relative paths are resolved from the project root. Use <code>healthcare_data</code> to scan the included sample dataset.</p>
+            </div>
+          </div>
+
+          <!-- Progress Area -->
+          <div class="scan-progress" id="scan-progress">
+            <div class="scan-progress__bar-wrap">
+              <div class="scan-progress__bar" id="scan-progress-bar"></div>
+            </div>
+            <div class="scan-progress__status">
+              <div class="spinner"></div>
+              <span id="scan-progress-text">Initializing forensic modules...</span>
+            </div>
+            <div class="scan-steps" id="scan-steps">
+              <div class="scan-step" id="step-1"><i class="fa-solid fa-circle-notch fa-spin"></i> Scanning directory structure</div>
+              <div class="scan-step dimmed" id="step-2"><i class="fa-regular fa-circle"></i> Extracting file metadata</div>
+              <div class="scan-step dimmed" id="step-3"><i class="fa-regular fa-circle"></i> Generating cryptographic hashes</div>
+              <div class="scan-step dimmed" id="step-4"><i class="fa-regular fa-circle"></i> Performing breach timeline analysis</div>
+              <div class="scan-step dimmed" id="step-5"><i class="fa-regular fa-circle"></i> Classifying healthcare categories</div>
+              <div class="scan-step dimmed" id="step-6"><i class="fa-regular fa-circle"></i> Compiling evidence report</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scan Summary Result Cards (populated after scan) -->
+        <div class="scan-result-grid hidden" id="scan-summary-grid">
+          <div class="result-card result-card--blue">
+            <i class="fa-solid fa-file-lines"></i>
+            <h4>Files Scanned</h4>
+            <p id="res-total">0</p>
+          </div>
+          <div class="result-card result-card--red">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h4>High Risk</h4>
+            <p id="res-high">0</p>
+          </div>
+          <div class="result-card result-card--green">
+            <i class="fa-solid fa-shield-check"></i>
+            <h4>Normal Files</h4>
+            <p id="res-low">0</p>
+          </div>
+          <div class="result-card result-card--purple">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h4>Scan Duration</h4>
+            <p id="res-duration">0s</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SECTION: EVIDENCE TABLE                     -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section" id="section-evidence">
+        <div class="section__header">
+          <div>
+            <h1 class="section__title">Evidence Logs</h1>
+            <p class="section__subtitle">Detailed forensic metadata collected from the last scan</p>
+          </div>
+          <div class="header-actions">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="evidence-search" placeholder="Search files, categories, hashes..."/>
+            </div>
+            <select class="form-select" id="filter-risk">
+              <option value="">All Risk Levels</option>
+              <option value="High">High Risk</option>
+              <option value="Low">Low Risk</option>
+            </select>
+            <button class="btn btn--outline" id="btn-download-report">
+              <i class="fa-solid fa-file-excel"></i> Export XLSX
+            </button>
+          </div>
+        </div>
+
+        <div class="glass-panel table-panel">
+          <div class="table-meta" id="table-meta">No evidence collected. Run a scan first.</div>
+          <div class="table-wrapper">
+            <table class="data-table" id="evidence-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>File Name</th>
+                  <th>Type</th>
+                  <th>Size (KB)</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Risk Level</th>
+                  <th>MD5 Hash</th>
+                  <th>Anomaly</th>
+                  <th>Modified Time</th>
+                  <th>Created Time</th>
+                </tr>
+              </thead>
+              <tbody id="evidence-tbody">
+                <tr><td colspan="11" class="table-empty">No evidence collected. Run a scan first.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-pagination" id="table-pagination"></div>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SECTION: ACTIVITY & REPORTS                 -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section" id="section-activity">
+        <div class="section__header">
+          <div>
+            <h1 class="section__title">Activity & Reports</h1>
+            <p class="section__subtitle">Complete scan history and report management</p>
+          </div>
+          <div class="header-actions">
+            <button class="btn btn--danger" id="btn-clear-activity">
+              <i class="fa-solid fa-trash"></i> Clear History
+            </button>
+            <button class="btn btn--primary btn--glow" id="btn-dl-report-activity">
+              <i class="fa-solid fa-download"></i> Download Report
+            </button>
+          </div>
+        </div>
+
+        <div class="glass-panel table-panel">
+          <table class="data-table" id="activity-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Timestamp</th>
+                <th>Directory Scanned</th>
+                <th>Files Found</th>
+                <th>High Risk</th>
+              </tr>
+            </thead>
+            <tbody id="activity-tbody">
+              <tr><td colspan="5" class="table-empty">No activity recorded yet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <!--  SECTION: SYSTEM LOGS                        -->
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section" id="section-logs">
+        <div class="section__header">
+          <div>
+            <h1 class="section__title">System Logs</h1>
+            <p class="section__subtitle">Live forensic activity log — last 200 entries</p>
+          </div>
+          <button class="btn btn--outline" id="btn-refresh-logs">
+            <i class="fa-solid fa-arrows-rotate"></i> Refresh
+          </button>
+        </div>
+        <div class="glass-panel log-panel">
+          <div class="log-toolbar">
+            <span class="log-file-label"><i class="fa-solid fa-file-code"></i> logs/forensic_activity.log</span>
+            <label class="toggle-wrap">
+              <input type="checkbox" id="toggle-autoscroll" checked/>
+              <span>Auto-scroll</span>
+            </label>
+          </div>
+          <div class="log-body" id="log-body">
+            <p class="log-empty">Fetching logs...</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- /app -->
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
