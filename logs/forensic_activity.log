@@ -1332,3 +1332,432 @@
 2026-04-21 20:54:24,407 - INFO - [OK] Scanned: healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
 2026-04-21 20:54:24,408 - INFO - [OK] Scanned: healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
 2026-04-21 20:54:24,448 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.05s
+2026-04-23 12:24:34,939 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-23 12:24:34,939 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-23 12:24:34,940 - INFO -  * Restarting with stat
+2026-04-23 12:24:38,620 - WARNING -  * Debugger is active!
+2026-04-23 12:24:38,626 - INFO -  * Debugger PIN: 410-421-307
+2026-04-23 12:24:38,649 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:38] "GET / HTTP/1.1" 200 -
+2026-04-23 12:24:38,693 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:38] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-23 12:24:38,695 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:38] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-23 12:24:39,972 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-23 12:24:41,772 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:41] "GET /api/stats HTTP/1.1" 200 -
+2026-04-23 12:24:52,108 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-23 12:24:52,108 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:52] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-23 12:24:52,109 - INFO - Files discovered: 10
+2026-04-23 12:24:52,115 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-23 12:24:52,116 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-23 12:24:52,117 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-23 12:24:52,117 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-23 12:24:52,118 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-23 12:24:52,118 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-23 12:24:52,118 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-23 12:24:52,118 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-23 12:24:52,119 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-23 12:24:52,120 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-23 12:24:52,162 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.05s
+2026-04-23 12:24:52,215 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:52] "GET /api/stats HTTP/1.1" 200 -
+2026-04-23 12:24:54,637 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:54] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-23 12:24:55,303 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:55] "GET /api/scans HTTP/1.1" 200 -
+2026-04-23 12:24:57,046 - INFO - 127.0.0.1 - - [23/Apr/2026 12:24:57] "GET /api/download-csv HTTP/1.1" 200 -
+2026-04-23 12:31:31,301 - INFO - 127.0.0.1 - - [23/Apr/2026 12:31:31] "GET /api/scans HTTP/1.1" 200 -
+2026-04-23 12:34:43,751 - INFO - 127.0.0.1 - - [23/Apr/2026 12:34:43] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 09:33:26,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-24 09:33:26,700 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 09:33:26,701 - INFO -  * Restarting with stat
+2026-04-24 09:33:27,390 - WARNING -  * Debugger is active!
+2026-04-24 09:33:27,392 - INFO -  * Debugger PIN: 410-421-307
+2026-04-24 09:33:29,441 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:29] "GET / HTTP/1.1" 200 -
+2026-04-24 09:33:29,476 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:29] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-24 09:33:29,476 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:29] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-24 09:33:30,673 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-24 09:33:32,485 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:32] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 09:33:36,330 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-24 09:33:36,330 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:36] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-24 09:33:36,331 - INFO - Files discovered: 10
+2026-04-24 09:33:36,334 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-24 09:33:36,336 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-24 09:33:36,336 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-24 09:33:36,337 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-24 09:33:36,337 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-24 09:33:36,337 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-24 09:33:36,337 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-24 09:33:36,338 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-24 09:33:36,338 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-24 09:33:36,339 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-24 09:33:36,380 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.05s
+2026-04-24 09:33:36,427 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:36] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 09:33:55,994 - INFO - 127.0.0.1 - - [24/Apr/2026 09:33:55] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 09:34:11,566 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:11] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 09:34:16,213 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:21,116 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:21] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:21,747 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:21] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:22,428 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:22] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:22,879 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:22] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:23,788 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:23] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 09:34:28,590 - INFO - 127.0.0.1 - - [24/Apr/2026 09:34:28] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:17:39,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-24 12:17:39,334 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 12:17:39,335 - INFO -  * Restarting with stat
+2026-04-24 12:17:40,407 - WARNING -  * Debugger is active!
+2026-04-24 12:17:40,409 - INFO -  * Debugger PIN: 410-421-307
+2026-04-24 12:17:42,840 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:42] "GET / HTTP/1.1" 200 -
+2026-04-24 12:17:42,890 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-24 12:17:42,891 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-24 12:17:43,918 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-24 12:17:45,751 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:17:48,689 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:48] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:17:53,881 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:53] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:17:54,238 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:54] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:17:57,552 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:57] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:17:59,268 - INFO - 127.0.0.1 - - [24/Apr/2026 12:17:59] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:18:03,426 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-24 12:18:03,426 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:03] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-24 12:18:03,427 - INFO - Files discovered: 10
+2026-04-24 12:18:03,431 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-24 12:18:03,462 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-24 12:18:03,462 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-24 12:18:03,463 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-24 12:18:03,464 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-24 12:18:03,466 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-24 12:18:03,467 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-24 12:18:03,467 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-24 12:18:03,467 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-24 12:18:03,468 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-24 12:18:03,542 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.12s
+2026-04-24 12:18:03,618 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:03] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:18:05,955 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:05] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:18:15,733 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:15] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:18:40,282 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:40] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:18:45,727 - INFO - 127.0.0.1 - - [24/Apr/2026 12:18:45] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:19:15,913 - INFO - 127.0.0.1 - - [24/Apr/2026 12:19:15] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:19:45,732 - INFO - 127.0.0.1 - - [24/Apr/2026 12:19:45] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:20:16,248 - INFO - 127.0.0.1 - - [24/Apr/2026 12:20:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:20:46,237 - INFO - 127.0.0.1 - - [24/Apr/2026 12:20:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:21:43,238 - INFO - 127.0.0.1 - - [24/Apr/2026 12:21:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:22:43,236 - INFO - 127.0.0.1 - - [24/Apr/2026 12:22:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:22:56,749 - INFO - 127.0.0.1 - - [24/Apr/2026 12:22:56] "GET / HTTP/1.1" 200 -
+2026-04-24 12:22:56,818 - INFO - 127.0.0.1 - - [24/Apr/2026 12:22:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-24 12:22:56,819 - INFO - 127.0.0.1 - - [24/Apr/2026 12:22:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-24 12:22:59,637 - INFO - 127.0.0.1 - - [24/Apr/2026 12:22:59] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:23:02,386 - INFO - Logout: nirmal
+2026-04-24 12:23:02,387 - INFO - 127.0.0.1 - - [24/Apr/2026 12:23:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-04-24 12:23:02,398 - INFO - 127.0.0.1 - - [24/Apr/2026 12:23:02] "GET /login HTTP/1.1" 200 -
+2026-04-24 12:23:43,238 - INFO - 127.0.0.1 - - [24/Apr/2026 12:23:43] "[32mGET /api/logs HTTP/1.1[0m" 302 -
+2026-04-24 12:23:43,247 - INFO - 127.0.0.1 - - [24/Apr/2026 12:23:43] "GET /login?next=/api/logs HTTP/1.1" 200 -
+2026-04-24 12:24:43,229 - INFO - 127.0.0.1 - - [24/Apr/2026 12:24:43] "[32mGET /api/logs HTTP/1.1[0m" 302 -
+2026-04-24 12:24:43,237 - INFO - 127.0.0.1 - - [24/Apr/2026 12:24:43] "GET /login?next=/api/logs HTTP/1.1" 200 -
+2026-04-24 12:24:55,276 - INFO - 127.0.0.1 - - [24/Apr/2026 12:24:55] "[32mGET /api/logs HTTP/1.1[0m" 302 -
+2026-04-24 12:24:55,287 - INFO - 127.0.0.1 - - [24/Apr/2026 12:24:55] "GET /login?next=/api/logs HTTP/1.1" 200 -
+2026-04-24 12:25:16,231 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:16] "[32mGET /api/logs HTTP/1.1[0m" 302 -
+2026-04-24 12:25:16,237 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:16] "GET /login?next=/api/logs HTTP/1.1" 200 -
+2026-04-24 12:25:21,844 - WARNING - Failed login attempt: admin
+2026-04-24 12:25:21,844 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:21] "POST /login HTTP/1.1" 200 -
+2026-04-24 12:25:26,373 - INFO - Login: nirmal (127.0.0.1)
+2026-04-24 12:25:26,374 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-24 12:25:26,386 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:26] "GET / HTTP/1.1" 200 -
+2026-04-24 12:25:26,452 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-24 12:25:26,453 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-24 12:25:28,525 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:28] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:25:33,415 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-24 12:25:33,415 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:33] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-24 12:25:33,416 - INFO - Files discovered: 10
+2026-04-24 12:25:33,421 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-24 12:25:33,422 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-24 12:25:33,423 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-24 12:25:33,424 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-24 12:25:33,425 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-24 12:25:33,425 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-24 12:25:33,426 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-24 12:25:33,426 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-24 12:25:33,426 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-24 12:25:33,427 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-24 12:25:33,491 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.08s
+2026-04-24 12:25:33,581 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:33] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:25:34,748 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:34] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:25:46,230 - INFO - 127.0.0.1 - - [24/Apr/2026 12:25:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:26:16,237 - INFO - 127.0.0.1 - - [24/Apr/2026 12:26:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:26:46,235 - INFO - 127.0.0.1 - - [24/Apr/2026 12:26:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:27:43,240 - INFO - 127.0.0.1 - - [24/Apr/2026 12:27:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:27:59,803 - INFO - 127.0.0.1 - - [24/Apr/2026 12:27:59] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:28:16,239 - INFO - 127.0.0.1 - - [24/Apr/2026 12:28:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:28:46,243 - INFO - 127.0.0.1 - - [24/Apr/2026 12:28:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:29:16,231 - INFO - 127.0.0.1 - - [24/Apr/2026 12:29:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:30:43,234 - INFO - 127.0.0.1 - - [24/Apr/2026 12:30:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:31:43,235 - INFO - 127.0.0.1 - - [24/Apr/2026 12:31:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:32:15,944 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:15] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 12:32:19,369 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:19] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 12:32:20,338 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:20] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:32:21,832 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:21] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 12:32:22,257 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:22] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 12:32:23,261 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:23] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 12:32:26,923 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:26] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 12:32:27,903 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:27] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 12:32:43,240 - INFO - 127.0.0.1 - - [24/Apr/2026 12:32:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:33:43,235 - INFO - 127.0.0.1 - - [24/Apr/2026 12:33:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:34:43,243 - INFO - 127.0.0.1 - - [24/Apr/2026 12:34:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:35:14,233 - INFO - 127.0.0.1 - - [24/Apr/2026 12:35:14] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 12:35:16,085 - INFO - 127.0.0.1 - - [24/Apr/2026 12:35:16] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 12:35:24,518 - INFO - 127.0.0.1 - - [24/Apr/2026 12:35:24] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 12:35:43,233 - INFO - 127.0.0.1 - - [24/Apr/2026 12:35:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:35:59,567 - INFO - 127.0.0.1 - - [24/Apr/2026 12:35:59] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:36:16,239 - INFO - 127.0.0.1 - - [24/Apr/2026 12:36:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:36:46,235 - INFO - 127.0.0.1 - - [24/Apr/2026 12:36:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:37:29,130 - INFO - 127.0.0.1 - - [24/Apr/2026 12:37:29] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:37:46,240 - INFO - 127.0.0.1 - - [24/Apr/2026 12:37:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:38:16,245 - INFO - 127.0.0.1 - - [24/Apr/2026 12:38:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:39:43,245 - INFO - 127.0.0.1 - - [24/Apr/2026 12:39:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:40:43,234 - INFO - 127.0.0.1 - - [24/Apr/2026 12:40:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:41:43,241 - INFO - 127.0.0.1 - - [24/Apr/2026 12:41:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:42:43,238 - INFO - 127.0.0.1 - - [24/Apr/2026 12:42:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:43:43,241 - INFO - 127.0.0.1 - - [24/Apr/2026 12:43:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:44:43,233 - INFO - 127.0.0.1 - - [24/Apr/2026 12:44:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:45:43,242 - INFO - 127.0.0.1 - - [24/Apr/2026 12:45:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:46:43,249 - INFO - 127.0.0.1 - - [24/Apr/2026 12:46:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 12:47:43,253 - INFO - 127.0.0.1 - - [24/Apr/2026 12:47:43] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 13:11:11,307 - INFO - 127.0.0.1 - - [24/Apr/2026 13:11:11] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 13:11:16,229 - INFO - 127.0.0.1 - - [24/Apr/2026 13:11:16] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 13:11:46,230 - INFO - 127.0.0.1 - - [24/Apr/2026 13:11:46] "GET /api/logs HTTP/1.1" 200 -
+2026-04-24 20:19:10,319 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-24 20:19:10,319 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 20:19:10,321 - INFO -  * Restarting with stat
+2026-04-24 20:19:11,162 - WARNING -  * Debugger is active!
+2026-04-24 20:19:11,197 - INFO -  * Debugger PIN: 516-190-817
+2026-04-24 20:19:14,609 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:14] "GET / HTTP/1.1" 200 -
+2026-04-24 20:19:14,655 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-24 20:19:14,657 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-24 20:19:15,702 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-24 20:19:17,533 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:19:21,668 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-24 20:19:21,668 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:21] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-24 20:19:21,670 - INFO - Files discovered: 10
+2026-04-24 20:19:21,675 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-24 20:19:21,708 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-24 20:19:21,708 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-24 20:19:21,709 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-24 20:19:21,709 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-24 20:19:21,709 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-24 20:19:21,710 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-24 20:19:21,711 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-24 20:19:21,712 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-24 20:19:21,713 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-24 20:19:21,831 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.16s
+2026-04-24 20:19:21,897 - INFO - 127.0.0.1 - - [24/Apr/2026 20:19:21] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:20:51,292 - INFO - 127.0.0.1 - - [24/Apr/2026 20:20:51] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 20:20:53,202 - INFO - 127.0.0.1 - - [24/Apr/2026 20:20:53] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 20:20:59,187 - INFO - 127.0.0.1 - - [24/Apr/2026 20:20:59] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:21:14,918 - INFO - 127.0.0.1 - - [24/Apr/2026 20:21:14] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 20:21:16,025 - INFO - 127.0.0.1 - - [24/Apr/2026 20:21:16] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 20:21:16,272 - INFO - 127.0.0.1 - - [24/Apr/2026 20:21:16] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 20:21:17,083 - INFO - 127.0.0.1 - - [24/Apr/2026 20:21:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:37:50,168 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-24 20:37:50,168 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-24 20:37:50,170 - INFO -  * Restarting with stat
+2026-04-24 20:37:50,998 - WARNING -  * Debugger is active!
+2026-04-24 20:37:51,001 - INFO -  * Debugger PIN: 410-421-307
+2026-04-24 20:37:53,811 - INFO - 127.0.0.1 - - [24/Apr/2026 20:37:53] "GET / HTTP/1.1" 200 -
+2026-04-24 20:37:53,875 - INFO - 127.0.0.1 - - [24/Apr/2026 20:37:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-24 20:37:53,875 - INFO - 127.0.0.1 - - [24/Apr/2026 20:37:53] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-24 20:37:54,908 - INFO - 127.0.0.1 - - [24/Apr/2026 20:37:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-24 20:37:56,707 - INFO - 127.0.0.1 - - [24/Apr/2026 20:37:56] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:38:00,637 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-24 20:38:00,637 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:00] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-24 20:38:00,639 - INFO - Files discovered: 10
+2026-04-24 20:38:00,674 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-24 20:38:00,675 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-24 20:38:00,677 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-24 20:38:00,678 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-24 20:38:00,679 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-24 20:38:00,680 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-24 20:38:00,681 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-24 20:38:00,681 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-24 20:38:00,682 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-24 20:38:00,682 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-24 20:38:00,768 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.13s
+2026-04-24 20:38:00,852 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:00] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:38:03,566 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:03] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:38:16,950 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:16] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-24 20:38:18,356 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:18] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 20:38:22,345 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:22] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:38:28,076 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:28] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 20:38:31,372 - WARNING - Scan history cleared by: nirmal
+2026-04-24 20:38:31,373 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:31] "POST /api/clear-history HTTP/1.1" 200 -
+2026-04-24 20:38:31,385 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:31] "GET /api/scans HTTP/1.1" 200 -
+2026-04-24 20:38:31,387 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:31] "GET /api/stats HTTP/1.1" 200 -
+2026-04-24 20:38:32,546 - INFO - 127.0.0.1 - - [24/Apr/2026 20:38:32] "GET /api/stats HTTP/1.1" 200 -
+2026-04-26 22:07:39,979 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-26 22:07:39,980 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-26 22:07:39,982 - INFO -  * Restarting with stat
+2026-04-26 22:07:40,876 - WARNING -  * Debugger is active!
+2026-04-26 22:07:40,908 - INFO -  * Debugger PIN: 410-421-307
+2026-04-26 22:07:42,738 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:42] "GET / HTTP/1.1" 200 -
+2026-04-26 22:07:42,802 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:42] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-26 22:07:42,805 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:42] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-26 22:07:46,129 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:46] "GET /api/stats HTTP/1.1" 200 -
+2026-04-26 22:07:50,278 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-26 22:07:50,279 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:50] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-26 22:07:50,279 - INFO - Files discovered: 10
+2026-04-26 22:07:50,313 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-26 22:07:50,314 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-26 22:07:50,314 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-26 22:07:50,315 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-26 22:07:50,315 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-26 22:07:50,316 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-26 22:07:50,316 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-26 22:07:50,316 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-26 22:07:50,317 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-26 22:07:50,317 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-26 22:07:50,371 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.09s
+2026-04-26 22:07:50,422 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:50] "GET /api/stats HTTP/1.1" 200 -
+2026-04-26 22:07:51,210 - INFO - 127.0.0.1 - - [26/Apr/2026 22:07:51] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:46:39,497 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-28 15:46:39,498 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-28 15:46:39,500 - INFO -  * Restarting with stat
+2026-04-28 15:46:40,781 - WARNING -  * Debugger is active!
+2026-04-28 15:46:40,789 - INFO -  * Debugger PIN: 777-836-901
+2026-04-28 15:46:43,508 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:43] "GET / HTTP/1.1" 200 -
+2026-04-28 15:46:43,562 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:43] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-04-28 15:46:43,564 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:43] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-04-28 15:46:47,082 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:47] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:46:53,650 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:53] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 15:46:56,137 - WARNING - Scan history cleared by: nirmal
+2026-04-28 15:46:56,138 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:56] "POST /api/clear-history HTTP/1.1" 200 -
+2026-04-28 15:46:56,166 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:56] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 15:46:56,169 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:56] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:46:57,362 - INFO - 127.0.0.1 - - [28/Apr/2026 15:46:57] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:47:11,362 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-28 15:47:11,362 - INFO - 127.0.0.1 - - [28/Apr/2026 15:47:11] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-28 15:47:11,363 - INFO - Files discovered: 10
+2026-04-28 15:47:11,369 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-28 15:47:11,370 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-28 15:47:11,372 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-28 15:47:11,373 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-28 15:47:11,375 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-28 15:47:11,376 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-28 15:47:11,377 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-28 15:47:11,377 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-28 15:47:11,378 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-28 15:47:11,378 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-28 15:47:11,449 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.09s
+2026-04-28 15:47:11,521 - INFO - 127.0.0.1 - - [28/Apr/2026 15:47:11] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:47:14,213 - INFO - 127.0.0.1 - - [28/Apr/2026 15:47:14] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 15:47:23,157 - INFO - 127.0.0.1 - - [28/Apr/2026 15:47:23] "GET /api/scans/1/evidence HTTP/1.1" 200 -
+2026-04-28 19:32:14,231 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-28 19:32:14,231 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-28 19:32:14,232 - INFO -  * Restarting with stat
+2026-04-28 19:32:15,012 - WARNING -  * Debugger is active!
+2026-04-28 19:32:15,015 - INFO -  * Debugger PIN: 643-587-150
+2026-04-28 19:32:19,562 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:19] "GET / HTTP/1.1" 200 -
+2026-04-28 19:32:19,799 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-28 19:32:19,800 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-04-28 19:32:20,919 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-28 19:32:22,754 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:22] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:32:28,333 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:28] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:32:31,194 - WARNING - Scan history cleared by: nirmal
+2026-04-28 19:32:31,194 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:31] "POST /api/clear-history HTTP/1.1" 200 -
+2026-04-28 19:32:31,211 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:31] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:32:31,215 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:31] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:32:32,350 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:32] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:32:56,846 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-28 19:32:56,847 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:56] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-28 19:32:56,848 - INFO - Files discovered: 10
+2026-04-28 19:32:56,883 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-28 19:32:56,884 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-28 19:32:56,885 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-28 19:32:56,885 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-28 19:32:56,886 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-28 19:32:56,886 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-28 19:32:56,888 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-28 19:32:56,888 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-28 19:32:56,889 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-28 19:32:56,889 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-28 19:32:56,975 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.13s
+2026-04-28 19:32:57,069 - INFO - 127.0.0.1 - - [28/Apr/2026 19:32:57] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:05,484 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:05] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:08,763 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:08] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:37:11,511 - WARNING - Scan history cleared by: nirmal
+2026-04-28 19:37:11,512 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:11] "POST /api/clear-history HTTP/1.1" 200 -
+2026-04-28 19:37:11,528 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:11] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:37:11,528 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:11] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:13,003 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:13,170 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:13,326 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:13,545 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:13] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:14,889 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:14] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:16,547 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:16] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:16,672 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:16] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:16,888 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:16] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:17,458 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:17,605 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:17,761 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:17,898 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:17] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:18,024 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:18] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:18,158 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:18] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:18,355 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:18] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:22,790 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-28 19:37:22,791 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:22] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-28 19:37:22,792 - INFO - Files discovered: 10
+2026-04-28 19:37:22,797 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-28 19:37:22,798 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-28 19:37:22,799 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-28 19:37:22,800 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-28 19:37:22,803 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-28 19:37:22,804 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-28 19:37:22,805 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-28 19:37:22,805 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-28 19:37:22,806 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-28 19:37:22,807 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-28 19:37:22,876 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.09s
+2026-04-28 19:37:22,946 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:22] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:27,317 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:27] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:37:29,940 - WARNING - Scan history cleared by: nirmal
+2026-04-28 19:37:29,940 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:29] "POST /api/clear-history HTTP/1.1" 200 -
+2026-04-28 19:37:29,955 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:29] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:37:29,956 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:29] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:37,951 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:37] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:40,066 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:40] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:40,226 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:40] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:40,373 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:40] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:40,597 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:40] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,113 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,260 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,422 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,583 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,735 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:44,883 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:45,038 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:45,266 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:45,570 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:45,732 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:45,958 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:45] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:37:48,458 - INFO - === Investigation Started === Case: HC-2026-001 | Dir: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data
+2026-04-28 19:37:48,459 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:48] "GET /api/scan/stream?path=healthcare_data HTTP/1.1" 200 -
+2026-04-28 19:37:48,461 - INFO - Files discovered: 10
+2026-04-28 19:37:48,465 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_case_summary_P001.txt | Risk: Low (10)
+2026-04-28 19:37:48,467 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_drug_inventory.txt | Risk: High (50)
+2026-04-28 19:37:48,468 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_invoices_2026.csv | Risk: Medium (28)
+2026-04-28 19:37:48,468 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_report_P003_cardiac.txt | Risk: Low (10)
+2026-04-28 19:37:48,470 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\billing\billing_payment_summary.txt | Risk: High (50)
+2026-04-28 19:37:48,471 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\EHR\ehr_patient_records.csv | Risk: Medium (28)
+2026-04-28 19:37:48,472 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\lab reports\lab_test_results_2026.csv | Risk: Medium (28)
+2026-04-28 19:37:48,473 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_records_2026.csv | Risk: High (68)
+2026-04-28 19:37:48,474 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Pharmacy\pharmacy_prescriptions_2026.csv | Risk: High (68)
+2026-04-28 19:37:48,475 - INFO - [OK] Scanned: C:\Users\nirma\OneDrive\Desktop\cli and web final\healthcare_data\Surgery\surgery_report_P003_angioplasty.txt | Risk: High (50)
+2026-04-28 19:37:48,540 - INFO - === Scan Complete === Files: 10 | Critical: 0 | High: 5 | Duration: 0.08s
+2026-04-28 19:37:48,601 - INFO - 127.0.0.1 - - [28/Apr/2026 19:37:48] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:38:32,463 - INFO - 127.0.0.1 - - [28/Apr/2026 19:38:32] "GET /api/timeline HTTP/1.1" 200 -
+2026-04-28 19:38:52,483 - INFO - 127.0.0.1 - - [28/Apr/2026 19:38:52] "GET /api/scans HTTP/1.1" 200 -
+2026-04-28 19:39:01,319 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:01] "GET /api/logs HTTP/1.1" 200 -
+2026-04-28 19:39:14,313 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:14] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:39:18,708 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:18] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:39:18,848 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:18] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:39:19,010 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:19] "GET /api/stats HTTP/1.1" 200 -
+2026-04-28 19:39:19,228 - INFO - 127.0.0.1 - - [28/Apr/2026 19:39:19] "GET /api/stats HTTP/1.1" 200 -
