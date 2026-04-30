@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Advanced Risk Scoring Engine
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 from datetime import datetime
@@ -76,12 +76,8 @@ def compute_risk_score(metadata: dict) -> tuple[int, str]:
     # ── Cap & categorise ─────────────────────────────────── #
     score = min(score, 100)
 
-    if score >= 70:
-        level = "Critical"
-    elif score >= 40:
+    if score >= 40:
         level = "High"
-    elif score >= 20:
-        level = "Medium"
     else:
         level = "Low"
 

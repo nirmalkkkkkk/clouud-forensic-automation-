@@ -1,7 +1,7 @@
 /**
  * ============================================================
  *  CYBERFORENSICS SOC — Healthcare Edition
- *  app.js  |  PRJN26-148
+ *  app.js
  * ============================================================
  */
 
@@ -154,7 +154,6 @@ async function fetchStats() {
     const d = await r.json();
 
     setText("sv-scans",       d.total_scans   ?? 0);
-    setText("sv-critical",    d.total_critical ?? 0);
     setText("sv-high",        d.total_high     ?? 0);
     setText("sv-files",       d.total_files    ?? 0);
 
@@ -189,7 +188,6 @@ function renderRecentScans(scans) {
         ${escHtml(s.directory)}
       </td>
       <td>${s.total_files}</td>
-      <td><span style="color:var(--risk-critical);font-weight:700">${s.critical_risk}</span></td>
       <td><span style="color:var(--risk-high);font-weight:700">${s.high_risk}</span></td>
       <td><code style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim)">${s.duration}s</code></td>
       <td>
@@ -255,9 +253,7 @@ function startScan() {
 
     // Show result cards
     setState("res-total",    d.total_files   || 0);
-    setState("res-critical", d.critical_risk || 0);
     setState("res-high",     d.high_risk     || 0);
-    setState("res-medium",   d.medium_risk   || 0);
     setState("res-low",      d.low_risk      || 0);
     setState("res-duration", `${d.duration || 0}s`);
     $("scan-summary-grid")?.classList.remove("hidden");
@@ -268,7 +264,7 @@ function startScan() {
     renderEvidenceTable(State.evidence);
     fetchStats();
 
-    toast(`Scan complete — ${d.total_files} files analysed. Critical: ${d.critical_risk}, High: ${d.high_risk}`, "success");
+    toast(`Scan complete — ${d.total_files} files analysed. High: ${d.high_risk}`, "success");
     resetScanBtn();
 
     // Populate category filter
@@ -363,7 +359,7 @@ function initUpload() {
   btn?.addEventListener("click", async () => {
     if (!selected.length) { toast("Please select files first.", "warning"); return; }
     const fd = new FormData();
-    selected.forEach(f => fd.append("files", f));
+    selected.forEach(f => fd.append("files", f, f.webkitRelativePath || f.name));
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Uploading...';
     try {
@@ -392,7 +388,7 @@ function initUpload() {
 /* ── Evidence Charts ───────────────────────────────────────── */
 function renderEvidenceCharts(evidence) {
   // Risk donut
-  const riskCounts = { Critical:0, High:0, Medium:0, Low:0 };
+  const riskCounts = { High:0, Low:0 };
   evidence.forEach(f => { if (riskCounts[f.risk_level] !== undefined) riskCounts[f.risk_level]++; });
 
   const hasRisk = Object.values(riskCounts).some(v => v > 0);
@@ -407,7 +403,7 @@ function renderEvidenceCharts(evidence) {
     if (riskWrap)  riskWrap.style.display = "block";
     buildDonutChart("chart-risk",
       Object.keys(riskCounts), Object.values(riskCounts),
-      ["#C00000","#FF6600","#FFC000","#00B050"]
+      ["#FF6600","#00B050"]
     );
   }
 
@@ -534,9 +530,7 @@ async function fetchTimeline() {
       data: {
         labels: timeline.map(t=>t.date),
         datasets: [
-          { label:"Critical", data: timeline.map(t=>t.critical||0), backgroundColor:"rgba(192,0,0,0.6)", borderRadius:3 },
           { label:"High",     data: timeline.map(t=>t.high||0),     backgroundColor:"rgba(255,102,0,0.6)", borderRadius:3 },
-          { label:"Medium",   data: timeline.map(t=>t.medium||0),   backgroundColor:"rgba(255,192,0,0.6)", borderRadius:3 },
           { label:"Low",      data: timeline.map(t=>t.low||0),       backgroundColor:"rgba(0,176,80,0.6)", borderRadius:3 },
         ]
       },
@@ -677,16 +671,16 @@ function renderTablePage() {
       <td>
         <div style="display:flex;align-items:center;gap:6px">
           <div style="flex:1;height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden">
-            <div style="height:100%;width:${Math.min(f.risk_score||0,100)}%;background:${riskL==='critical'?'var(--risk-critical)':riskL==='high'?'var(--risk-high)':riskL==='medium'?'var(--risk-medium)':'var(--risk-low)'}"></div>
+            <div style="height:100%;width:${Math.min(f.risk_score||0,100)}%;background:${riskL==='high'?'var(--risk-high)':'var(--risk-low)'}"></div>
           </div>
           <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim)">${f.risk_score||0}</span>
         </div>
       </td>
       <td>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:${(f.entropy||0)>7.5?'var(--risk-critical)':(f.entropy||0)>6.5?'var(--risk-high)':'var(--text-dim)'}">${(f.entropy||0).toFixed(3)}</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:${(f.entropy||0)>6.5?'var(--risk-high)':'var(--text-dim)'}">${(f.entropy||0).toFixed(3)}</span>
       </td>
       <td>
-        ${ts ? '<span style="color:var(--risk-critical);font-size:11px"><i class="fa-solid fa-exclamation-circle"></i> Yes</span>'
+        ${ts ? '<span style="color:var(--risk-high);font-size:11px"><i class="fa-solid fa-exclamation-circle"></i> Yes</span>'
              : '<span style="color:var(--text-muted);font-size:11px">—</span>'}
       </td>
       <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim)">${formatDate(f.modified_time)}</td>
@@ -760,10 +754,10 @@ function openFileModal(f) {
         <p><span style="color:var(--risk-${riskL})">${f.risk_score || 0} / 100</span></p>
       </div>
       <div class="detail-item"><label>Shannon Entropy</label>
-        <p style="color:${(f.entropy||0)>7.5?'var(--risk-critical)':(f.entropy||0)>6.5?'var(--risk-high)':'inherit'}">${(f.entropy||0).toFixed(4)}</p>
+        <p style="color:${(f.entropy||0)>6.5?'var(--risk-high)':'inherit'}">${(f.entropy||0).toFixed(4)}</p>
       </div>
       <div class="detail-item"><label>Timestomping</label>
-        <p style="color:${ts?'var(--risk-critical)':'var(--text-dim)'}">${ts?'⚠ Detected':'None'}</p>
+        <p style="color:${ts?'var(--risk-high)':'var(--text-dim)'}">${ts?'⚠ Detected':'None'}</p>
       </div>
       <div class="detail-item"><label>Anomaly Flag</label><p>${escHtml(f.anomaly_flag)||'None'}</p></div>
       <div class="detail-item"><label>Permissions</label><p>${escHtml(f.permissions)}</p></div>
@@ -811,9 +805,7 @@ async function fetchAllScans() {
         <td style="font-size:12px">${formatDate(s.scanned_at)}</td>
         <td style="max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px" title="${escHtml(s.directory)}">${escHtml(s.directory)}</td>
         <td><strong>${s.total_files}</strong></td>
-        <td><span style="color:var(--risk-critical);font-weight:700">${s.critical_risk}</span></td>
         <td><span style="color:var(--risk-high);font-weight:700">${s.high_risk}</span></td>
-        <td><span style="color:var(--risk-medium);font-weight:700">${s.medium_risk}</span></td>
         <td><span style="color:var(--risk-low);font-weight:700">${s.low_risk}</span></td>
         <td><code style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-dim)">${s.duration}s</code></td>
         <td>

@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Database Models (SQLAlchemy + SQLite)
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 from flask_sqlalchemy import SQLAlchemy

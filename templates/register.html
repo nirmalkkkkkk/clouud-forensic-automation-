@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login — CyberForensics Healthcare SOC</title>
+  <title>Register — CyberForensics Healthcare SOC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -194,7 +194,7 @@
 
       </div>
 
-      <p class="form-title">Sign in to your account</p>
+      <p class="form-title">Create a new account</p>
 
       {% if error %}
       <div class="error-msg">
@@ -202,12 +202,12 @@
       </div>
       {% endif %}
 
-      <form method="POST" action="/login" autocomplete="on">
+      <form method="POST" action="/register" autocomplete="on">
         <div class="form-group">
           <label for="username">Username</label>
           <div class="input-wrap">
             <input type="text" id="username" name="username" class="form-input"
-                   placeholder="Enter your username" required autocomplete="username" />
+                   placeholder="Choose a username" required autocomplete="username" />
             <i class="fa-solid fa-user"></i>
           </div>
         </div>
@@ -215,24 +215,35 @@
           <label for="password">Password</label>
           <div class="input-wrap">
             <input type="password" id="password" name="password" class="form-input"
-                   placeholder="Enter your password" required autocomplete="current-password" />
+                   placeholder="Create a password" required autocomplete="new-password" />
             <i class="fa-solid fa-lock"></i>
           </div>
         </div>
-        <button type="submit" class="btn-login" id="btn-login">
-          <i class="fa-solid fa-right-to-bracket"></i> Authenticate
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password</label>
+          <div class="input-wrap">
+            <input type="password" id="confirm_password" name="confirm_password" class="form-input"
+                   placeholder="Confirm your password" required autocomplete="new-password" />
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+        </div>
+        <button type="submit" class="btn-login" id="btn-register">
+          <i class="fa-solid fa-user-plus"></i> Register
         </button>
       </form>
 
       <div class="login-footer">
-        Don't have an account? <a href="/register" style="color: var(--accent); text-decoration: none; font-weight: 500;">Register here</a>
+        Already have an account? <a href="/login" style="color: var(--accent); text-decoration: none; font-weight: 500;">Sign in here</a>
       </div>
     </div>
   </div>
 
   <script>
-    document.getElementById('btn-login').addEventListener('click', function(e) {
-      this.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Authenticating...';
+    document.getElementById('btn-register').addEventListener('click', function(e) {
+      var form = this.closest('form');
+      if (form.checkValidity()) {
+        this.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Registering...';
+      }
     });
   </script>
 </body>

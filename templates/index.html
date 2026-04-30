@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CyberForensics SOC — Healthcare Breach Investigation</title>
-  <meta name="description" content="Professional cloud forensics SOC dashboard for healthcare data breach investigation. Case PRJN26-148." />
+  <meta name="description" content="Professional cloud forensics SOC dashboard for healthcare data breach investigation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -46,11 +46,7 @@
         </div>
       </div>
 
-      <div class="sidebar__case">
-        <i class="fa-solid fa-briefcase-clock"></i>
-        <span>PRJN26-148</span>
-        <span class="live-dot"></span>
-      </div>
+
 
       <nav class="sidebar__nav" aria-label="Main navigation">
         <p class="nav-label">Investigation</p>
@@ -142,14 +138,7 @@
               <h2 class="kpi__value" id="sv-scans">—</h2>
             </div>
           </div>
-          <div class="kpi-card kpi--red" id="kpi-critical">
-            <div class="kpi__glow"></div>
-            <div class="kpi__icon"><i class="fa-solid fa-skull-crossbones"></i></div>
-            <div class="kpi__body">
-              <p class="kpi__label">Critical Risk Files</p>
-              <h2 class="kpi__value" id="sv-critical">—</h2>
-            </div>
-          </div>
+
           <div class="kpi-card kpi--orange" id="kpi-high">
             <div class="kpi__glow"></div>
             <div class="kpi__icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
@@ -203,7 +192,7 @@
               <thead>
                 <tr>
                   <th>Session</th><th>Timestamp</th><th>Directory</th>
-                  <th>Files</th><th>Critical</th><th>High</th><th>Duration</th><th>Action</th>
+                  <th>Files</th><th>High</th><th>Duration</th><th>Action</th>
                 </tr>
               </thead>
               <tbody id="recent-scans-tbody">
@@ -286,18 +275,12 @@
               <i class="fa-solid fa-file-lines"></i><h4>Files Scanned</h4>
               <p id="res-total">0</p>
             </div>
-            <div class="result-card result-card--red">
-              <i class="fa-solid fa-skull-crossbones"></i><h4>Critical</h4>
-              <p id="res-critical">0</p>
-            </div>
+
             <div class="result-card result-card--orange">
               <i class="fa-solid fa-triangle-exclamation"></i><h4>High Risk</h4>
               <p id="res-high">0</p>
             </div>
-            <div class="result-card result-card--yellow">
-              <i class="fa-solid fa-circle-exclamation"></i><h4>Medium Risk</h4>
-              <p id="res-medium">0</p>
-            </div>
+
             <div class="result-card result-card--green">
               <i class="fa-solid fa-circle-check"></i><h4>Low Risk</h4>
               <p id="res-low">0</p>
@@ -322,7 +305,7 @@
               <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
               <p>Drag & drop files here, or click to browse</p>
               <span class="upload-hint">Max 256 MB total · All healthcare file types supported</span>
-              <input type="file" id="file-input" multiple style="display:none" />
+              <input type="file" id="file-input" multiple webkitdirectory directory style="display:none" />
             </div>
             <div id="upload-file-list" class="upload-file-list"></div>
             <button class="btn btn--primary btn--glow btn--lg" id="btn-upload-files" style="margin-top:16px">
@@ -347,9 +330,7 @@
             </div>
             <select class="form-select" id="filter-risk">
               <option value="">All Risk Levels</option>
-              <option value="Critical">Critical</option>
               <option value="High">High</option>
-              <option value="Medium">Medium</option>
               <option value="Low">Low</option>
             </select>
             <select class="form-select" id="filter-category">
@@ -448,8 +429,8 @@
               <thead>
                 <tr>
                   <th>#</th><th>Date</th><th>Directory Scanned</th>
-                  <th>Files</th><th>Critical</th><th>High</th>
-                  <th>Medium</th><th>Low</th><th>Duration</th><th>Action</th>
+                  <th>Files</th><th>High</th>
+                  <th>Low</th><th>Duration</th><th>Action</th>
                 </tr>
               </thead>
               <tbody id="scans-tbody">

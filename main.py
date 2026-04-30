@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Core Forensic Engine (upgraded)
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 import os
@@ -140,14 +140,12 @@ def run_forensic_scan(directory_path: str, web_mode: bool = False,
     # ── Counters ─────────────────────────────────────────── #
     def _cnt(lvl): return sum(1 for f in evidence_collection if f.get("Risk Level") == lvl)
 
-    critical = _cnt("Critical")
     high     = _cnt("High")
-    medium   = _cnt("Medium")
     low      = _cnt("Low")
     anomalies = sum(1 for f in evidence_collection if f.get("Anomaly Flag", "None") != "None")
 
-    logging.info("=== Scan Complete === Files: %d | Critical: %d | High: %d | Duration: %.2fs",
-                 len(evidence_collection), critical, high, duration)
+    logging.info("=== Scan Complete === Files: %d | High: %d | Duration: %.2fs",
+                 len(evidence_collection), high, duration)
 
     if not web_mode:
         print(f"\n{'='*60}")
@@ -155,7 +153,7 @@ def run_forensic_scan(directory_path: str, web_mode: bool = False,
         print(f"{'='*60}")
         print(f"Case ID: {CASE_ID}")
         print(f"Total Files: {len(evidence_collection)}")
-        print(f"Critical: {critical}  High: {high}  Medium: {medium}  Low: {low}")
+        print(f"High: {high}  Low: {low}")
         print(f"Duration: {duration}s")
         print(f"Reports: {REPORT_CSV}, {REPORT_XLSX}, {REPORT_PDF}")
         print(f"{'='*60}\n")
@@ -165,9 +163,7 @@ def run_forensic_scan(directory_path: str, web_mode: bool = False,
         "case_id"      : CASE_ID,
         "investigator" : INVESTIGATOR,
         "total_files"  : len(evidence_collection),
-        "critical_risk": critical,
         "high_risk"    : high,
-        "medium_risk"  : medium,
         "low_risk"     : low,
         "anomalies"    : anomalies,
         "duration"     : duration,

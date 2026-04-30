@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Flask Application  |  SSE + Auth + DB + API
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 import os, json, queue, threading, time, logging
@@ -23,12 +23,19 @@ from main import run_forensic_scan
 # ─────────────────────────────────────────────────────────── #
 #  APP FACTORY
 # ─────────────────────────────────────────────────────────── #
+from flask import Request
+
+class CustomRequest(Request):
+    max_form_parts = 100000  # Allow up to 100,000 files in a single folder upload
+    max_form_memory_size = 2 * 1024 * 1024 * 1024 # 2 GB
+
 app = Flask(__name__)
+app.request_class = CustomRequest
 app.secret_key = config.SECRET_KEY
 app.config["SQLALCHEMY_DATABASE_URI"]        = config.DATABASE_URI
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["UPLOAD_FOLDER"]                  = config.UPLOAD_FOLDER
-app.config["MAX_CONTENT_LENGTH"]             = 256 * 1024 * 1024   # 256 MB
+app.config["MAX_CONTENT_LENGTH"]             = 2 * 1024 * 1024 * 1024   # 2 GB
 
 db.init_app(app)
 
@@ -124,6 +131,36 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for("index"))
+
+    error = None
+    if request.method == "POST":
+        username = (request.form.get("username") or "").strip()
+        password = request.form.get("password") or ""
+        confirm_password = request.form.get("confirm_password") or ""
+
+        if not username or not password or not confirm_password:
+            error = "All fields are required."
+        elif password != confirm_password:
+            error = "Passwords do not match."
+        else:
+            existing_user = User.query.filter_by(username=username).first()
+            if existing_user:
+                error = "Username already exists. Please choose another one."
+            else:
+                new_user = User(username=username, role="analyst")
+                new_user.set_password(password)
+                db.session.add(new_user)
+                db.session.commit()
+                logging.info("New user registered: %s (%s)", username, request.remote_addr)
+                return redirect(url_for("login"))
+
+    return render_template("register.html", error=error)
+
+
 # ─────────────────────────────────────────────────────────── #
 #  MAIN DASHBOARD
 # ─────────────────────────────────────────────────────────── #
@@ -145,7 +182,6 @@ def api_stats():
     sessions = ScanSession.query.order_by(ScanSession.scanned_at.desc()).all()
     total_sessions = len(sessions)
     total_files    = sum(s.total_files   for s in sessions)
-    total_critical = sum(s.critical_risk for s in sessions)
     total_high     = sum(s.high_risk     for s in sessions)
     recent         = [s.to_dict() for s in sessions[:5]]
 
@@ -155,7 +191,6 @@ def api_stats():
         "system_name"   : config.SYSTEM_NAME,
         "total_scans"   : total_sessions,
         "total_files"   : total_files,
-        "total_critical": total_critical,
         "total_high"    : total_high,
         "report_exists" : os.path.exists(config.REPORT_CSV),
         "recent_scans"  : recent,
@@ -209,9 +244,7 @@ def api_scan_stream():
                     investigator  = results["investigator"],
                     directory     = safe_path,
                     total_files   = results["total_files"],
-                    critical_risk = results["critical_risk"],
                     high_risk     = results["high_risk"],
-                    medium_risk   = results["medium_risk"],
                     low_risk      = results["low_risk"],
                     anomalies     = results.get("anomalies", 0),
                     duration      = results["duration"],
@@ -323,12 +356,14 @@ def api_timeline():
         try:
             date = r.modified_time[:10]   # "YYYY-MM-DD"
             if date not in buckets:
-                buckets[date] = {"date": date, "total": 0, "critical": 0,
-                                  "high": 0, "medium": 0, "low": 0}
+                buckets[date] = {"date": date, "total": 0, "high": 0, "low": 0}
+
             buckets[date]["total"] += 1
-            lvl = (r.risk_level or "low").lower()
-            if lvl in buckets[date]:
-                buckets[date][lvl] += 1
+            risk = (r.risk_level or "low").capitalize()
+            if risk == "High":
+                buckets[date]["high"] += 1
+            elif risk == "Low":
+                buckets[date]["low"] += 1
         except Exception:
             pass
 
@@ -367,10 +402,25 @@ def api_upload():
 
     for f in files:
         if f and _allowed_file(f.filename):
-            fname = secure_filename(f.filename)
-            dest  = os.path.join(upload_dir, fname)
+            parts = f.filename.replace('\\', '/').split('/')
+            safe_parts = [secure_filename(p) for p in parts if p]
+            
+            if not safe_parts:
+                errors.append(f.filename)
+                continue
+                
+            fname = safe_parts[-1]
+            if not fname:
+                errors.append(f.filename)
+                continue
+                
+            rel_dir = os.path.join(*safe_parts[:-1]) if len(safe_parts) > 1 else ""
+            full_dir = os.path.join(upload_dir, rel_dir)
+            os.makedirs(full_dir, exist_ok=True)
+            
+            dest = os.path.join(full_dir, fname)
             f.save(dest)
-            saved.append(fname)
+            saved.append(f.filename)
         else:
             errors.append(f.filename)
 

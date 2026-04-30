@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Directory Scanner (upgraded)
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 import os

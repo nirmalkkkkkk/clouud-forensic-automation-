@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Central Configuration
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 import os

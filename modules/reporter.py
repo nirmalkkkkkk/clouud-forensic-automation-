@@ -2,7 +2,7 @@
 =============================================================
    CLOUD FORENSICS AUTOMATION - HEALTHCARE EDITION
    Report Generator: CSV + XLSX + PDF
-   Case Reference: PRJN26-148
+
 =============================================================
 """
 import os
@@ -214,7 +214,7 @@ def write_pdf_report(pdf_path: str, evidence_data: list,
     meta = [
         ["Case ID:",       case_id,        "Investigator:", investigator],
         ["Scan Target:",   scan_dir,       "Generated:",    datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
-        ["Total Files:",   len(evidence_data), "Case Ref:", "PRJN26-148"],
+        ["Total Files:",   len(evidence_data), "", ""],
     ]
     meta_table = Table(meta, colWidths=[3.5*cm, 7*cm, 3.5*cm, 7*cm])
     meta_table.setStyle(TableStyle([
